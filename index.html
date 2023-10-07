@@ -7,25 +7,27 @@
     <body>
         <div>  
             <nav class="cabecalho">
+                
                 <button class="botaocabecalho">Home</button>
             
                 <div class="dropdown">
                     <button class="botaocabecalho">Climas</button>
-                        <div class="dropdown-content">
+                    <div class="dropdown-content">
                             <a>Sol Forte</a>
                             <a>Chuva</a>
                             <a>Tempestade de Areia</a>
                             <a>Neve</a>
                             <a>Névoa</a>
                             <a>Ventos Fortes</a>
-                        </div>
+                    </div>
                 </div>
             
                 <button class="botaocabecalho">Habilidades Climaticas</button>
+            
             </nav>
         </div>
 
-        <div>
+        <div class="container">
             <nav class="lateral">
                 <button class="botaolateral">Oque é?</button>
                 <button class="botaolateral">Oque faz?</button>
@@ -37,9 +39,65 @@
 
         <div class="conteudo">   
             <section>
-            <h1>Oque é?</h1>
+                <article>
+                    <h1>Oque é?</h1>
+                    <img src="imagem/psyduck.png" alt="Pato confuso" width="180px" height="180px">
+                    <span class="loader"></span>   
+
+                <p>Climas alteram o ambiente de batalha, ativando Habilidades, modificando certos movimentos e potencialmente danificando o Pokémon
+                    na batalha ou afetando suas estatísticas. Eles foram incluídos em todos os jogos da série principal desde a Geração II. 
+                    Apenas um tipo de clima pode estar presente por vez; qualquer efeito que cria um clima removerá o clima anterior.</p>
+                
+                <p>Na Geração II, a única maneira de causar o clima era através de um Pokémon usando um movimento durante a batalha. 
+                    A Geração III introduziu habilidades relacionadas aos climas, bem como aos climas no mundo aberto; iniciar uma batalha em um 
+                    local aberto com um clima faz com que esse clima esteja presente desde o inicio da batalha; 
+                    A Geração IV introduziu quatro itens(as Pedras de Calor, Umidade, Suavidade e Geladas) que aumentam a duração do clima causado 
+                    por um movimentos ou habilidade.A Geração V introduziu as estações, que podem afetar o clima em determinados locais, 
+                    e a Geração VI introduziu um novo método de evolução afetado pelo clima. A Geração VIII introduziu efeitos no mundo aberto
+                    que se assemelham ao clima, mas não correspondem diretamente ao clima da batalha.</p>
+                </article>
             </section>
-            <section></section>
+            <section>
+                <article>
+                    <h1>O que faz?</h1>
+                    <p>Cada clima tem um efeito dentro de batalha sendo eles:</p>
+                    <table>
+                        <tr>
+                          <th>Clima</th>
+                          <th>Efeito</th>
+                        </tr>
+                        <tr>
+                            <td>Sol Forte</td>
+                            <td>Aumenta o poder dos movimentos do tipo Fogo e diminui o poder dos movimentos do tipo Água.   </td>
+                        </tr>
+
+                        <tr>
+                            <td>Chuva</td>
+                            <td>Aumenta o poder dos movimentos do tipo Água e diminui o poder dos movimentos do tipo Fogo.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tempestade de Areia</td>
+                            <td>No final de cada turno, causa dano a todos os Pokémon que não sejam do tipo Pedra, Solo ou Metal. Aumenta a Def. Esp. de Pokémon do tipo Pedra.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Neve</td>
+                            <td>Aumenta a probabilidade do movimento Nevasca acertar e aumenta a defesa dos Pokémon do tipo Gelo</td>
+                        </tr>
+
+                          <tr>
+                            <td>Névoa</td>
+                            <td>Todos os movimentos são menos precisos, exceto aqueles que sempre acertam.</td>
+                          </tr>
+
+                          <tr>
+                            <td>Ventos Fortes</td>
+                            <td>O poder dos movimentos que são supereficazes contra Pokémon do tipo Voador foi reduzido.</td>
+                          </tr>
+                      </table>
+                </article>
+            </section>
             </div>
         </div>
     </body>

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+table, th, td {
+    border: 1px solid;
+    border-color: black;
+    padding: 5px;
+  }
 .cabecalho{
     background-color: #C6C6A7;
     padding: 20px;
@@ -84,8 +89,15 @@
     height: 1200px;
 }
 
+.container{
+    display: flex;
+}
 
 @media (max-width: 600px) {
+
+    .container{
+        flex-direction: column  ;
+    }
 
     .lateral{
         width: 100%;
@@ -97,14 +109,14 @@
 }
 
 .loader{
-    width: 50px;
-    height: 50px;
-    border: 5px solid #000;
-    border-bottom-color: teal;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    width: 50px; /* Largura do circulo */
+    height: 50px; /* Altura do circulo */
+    border: 5px solid #000; /* Definindo a espessura da borda, o tipo e a cor do quadrado */
+    border-bottom-color: teal; /* Define a cor da parte de baixo do quadrado */
+    border-radius: 50%; /* Aumenta o raio do quadrado para transformar em um circulo */
+    display: inline-block; /* serve para bloquear a visualização e manter o circulo fino e expandido */
+    box-sizing: border-box; /* Não sei */
+    animation: rotation 1s linear infinite; /* Define para rodar, ele completa o ciclo em 1 segundo e ele vai fazer isso infinitamente */
 }
 
 @keyframes rotation {
